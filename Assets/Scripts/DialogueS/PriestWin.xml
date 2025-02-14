@@ -1,0 +1,14 @@
+<dialogue>
+    <node>
+        <npctext>Изыди, демон, с земель священных!</npctext>
+        <answers>
+            <answer tonode = "1"> <text> *Продолжить*</text> <condition>demonlose</condition>  </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Ты молодец, что не побоялся покаяться и выстоять перед демоном</npctext>
+        <answers>
+            <answer tonode = "1"> <text> Спасибо, отец</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+</dialogue>

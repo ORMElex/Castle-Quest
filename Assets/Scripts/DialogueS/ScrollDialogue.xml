@@ -1,0 +1,9 @@
+<dialogue>
+    <node>
+        <npctext>*А вот и пропуск. Надеюсь, это больше никому не нужно.*</npctext>
+        <answers>
+            <answer tonode = "0"> <text> *Взять пропуск*</text> <dialend>true</dialend> <condition>scrollPass</condition>  </answer>
+            <answer tonode = "0"> <text> *Уйти*</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+</dialogue>

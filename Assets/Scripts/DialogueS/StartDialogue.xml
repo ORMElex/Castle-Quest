@@ -1,0 +1,8 @@
+<dialogue>
+    <node>
+        <npctext>*Надо бы найти способ попасть в замок*</npctext>
+        <answers>
+            <answer tonode = "0"> <text> *Продолжить*</text> <dialend>true</dialend></answer>
+        </answers>
+    </node>
+</dialogue>

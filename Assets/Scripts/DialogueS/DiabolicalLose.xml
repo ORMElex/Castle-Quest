@@ -1,0 +1,8 @@
+<dialogue>
+    <node>
+        <npctext>Зря ты с этим стариком связался</npctext>
+        <answers>
+            <answer tonode = "0"> <text> *Продолжить*</text> <dialend>true</dialend> <condition>priestCome</condition> </answer>
+        </answers>
+    </node>
+</dialogue>

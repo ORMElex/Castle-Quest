@@ -1,0 +1,8 @@
+<dialogue>
+    <node>
+        <npctext>Отличная работа. Наслаждайся своим творением</npctext>
+        <answers>
+            <answer tonode = "0"> <text> *Продолжить*</text> <dialend>true</dialend></answer>
+        </answers>
+    </node>
+</dialogue>

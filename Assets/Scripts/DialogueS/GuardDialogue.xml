@@ -1,0 +1,15 @@
+<dialogue>
+    <node>
+        <npctext> Стой! Проход закрыт для посетителей. Предъяви пропуск или убирайся, пока тебя не убрали</npctext>
+        <answers>
+            <answer tonode = "0"> <text> *Уйти*</text> <dialend>true</dialend> </answer>
+            <answer tonode = "1"> <text> Вот пропуск*</text> <condition>passNeed</condition> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> Проходи</npctext>
+        <answers>
+            <answer tonode = "1"> <text> *Пройти в замок*</text> <condition>pass</condition> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+</dialogue>

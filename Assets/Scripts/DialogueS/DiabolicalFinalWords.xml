@@ -1,0 +1,8 @@
+<dialogue>
+    <node>
+        <npctext>А ведь я говорил, что договоры нужно исполнять. Теперь твоя душа моя</npctext>
+        <answers>
+            <answer tonode = "0"> <text> *Продолжить*</text> <dialend>true</dialend> <condition>finaldeath</condition>  </answer>
+        </answers>
+    </node>
+</dialogue>

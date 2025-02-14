@@ -1,0 +1,65 @@
+<dialogue>
+    <node>
+        <npctext> Приветствую, сын мой! Что привело тебя в эти святые стены?</npctext>
+        <answers>
+            <answer tonode = "1"> <text> Любопытсво. Почему я не могу взабраться по дороге к замку? Будто что-то тянет меня вниз.</text> </answer>
+            <answer tonode = "3"> <text> Почему ни у кого нет лица, кроме тебя? </text> </answer>
+            <answer tonode = "6"> <text> Тебя не касается! </text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> Коль муж благими намерениями ведом, то дорогу осилит идущий. А ежели зло какое замышляет, то не видеть ему замка и в свет.</npctext>
+        <answers>
+            <answer tonode = "2"> <text> И что это значит?</text> </answer>
+            <answer tonode = "4"> <text> Ты головой ударился, батюшка? Выражайся яснее, старик. Я тороплюсь</text> </answer>
+            <answer tonode = "6"> <text> Ой, иди куда шёл, маразматик </text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> Ответь мне, с какими намерениями ты к представителю Всевышнего идёшь?</npctext>
+        <answers>
+            <answer tonode = "7"> <text> Увидеть замок королевский своими глазами</text></answer>
+            <answer tonode = "5"> <text> Прощения просить. Замок поджечь хотел я. Не знаю что в голову мне ударило. Простите, батюшка</text> <condition>checkTruth</condition> </answer>
+            <answer tonode = "6"> <text> Тебя это не касается! Иди куда шёл! </text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> Моё лицо — зеркало Бога. Коль сердце твое искренне будет, так и твоё лицо просветлеет</npctext>
+        <answers>
+            <answer tonode = "1"> <text>  А почему я не могу взабраться по дороге к замку? Будто что-то тянет меня вниз.</text> </answer>
+            <answer tonode = "8"> <text> Что за бредни ты говоришь, старик. Убирайся! </text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> Всё вам поспешить да поспешить. Так ведь жизнь и пролетит.</npctext>
+        <answers>
+            <answer tonode="8"> <text> Как дал бы тебе! Да руку не поднимется безумца обидеть </text></answer>
+            <answer tonode="8"> <text> Пойду я, старик</text> </answer>
+            <answer tonode="5"> <text> Кажется, я согрешил, отец. Я согласился отнести это зловещий артефакт к замку</text> <condition>checkTruth</condition> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> Небойся сын мой. Я заберу у тебя инструмент дьявола. А ты иди и покайся перед царём, да расскажи ему про всё</npctext>
+        <answers>
+            <answer tonode = "8"> <text> *Пойти покаяться*</text> <condition>confess</condition> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Ну и глупец! Сделка с дьяволом не принисёт тебе ничего кроме горя</npctext>
+        <answers>
+            <answer tonode = "8"> <text> А тебе то что?</text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Ступай с Богом. Удовлетвори свое любопытсво</npctext>
+        <answers>
+            <answer tonode="8"> <text> *Оставить старика* </text> <condition>leavePrist</condition> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext> *Старик медленно бредёт вниз*</npctext>
+        <answers>
+            <answer tonode="8"> <text> *Оставить старика* </text> <condition>leavePrist</condition> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+</dialogue>

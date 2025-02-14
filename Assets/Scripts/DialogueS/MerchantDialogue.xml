@@ -1,0 +1,91 @@
+<dialogue>
+    <node>
+        <npctext> Приветствую, путник! Что привело тебя к вратам этого замка?</npctext>
+        <answers>
+            <answer tonode = "1"> <text> Мне нужно попасть внутрь</text> </answer>
+            <answer tonode = "5"> <text> Почему твоё лицо скрыто?</text> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Путь к замку закрыт для тех, кто не имеет особого пропуска. Но я могу предоставить тебе проход, если ты окажешь мне услугу.</npctext>
+        <answers>
+            <answer tonode = "2"> <text> Что за услуга тебе нужна? </text> </answer>
+            <answer tonode = "7"> <text> Нет, спасибо. Сам как-нибудь разберусь </text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Мне нужно, чтобы ты отнёс одну эту вещицу наверх. А взамен я дам тебе пропуск дам.</npctext>
+        <answers>
+            <answer tonode="3"> <text>Что за вещица?</text> </answer>
+            <answer tonode="6"> <text>Давай сюда и пропуск, и вещицу свою.</text> </answer>
+            <answer tonode="7"> <text>Я не заинтересован в твоих услугах. Прощай.</text> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Артефакт, который поддожёт это место алчности и власти. А большего тебе знать и не нужно. Так что, уговор?</npctext>
+        <answers>
+            <answer tonode="4"> <text>А чего сам не отнесёшь?</text></answer>
+            <answer tonode="6"> <text>*Согласится на предложение*</text></answer>
+            <answer tonode="7"> <text>Я не заинтересован в твоих услугах. Прощай.</text> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Ты либо бери пропуск свой и исполняй, что должно, либо проваливай отсюда. Любопытный какой попался</npctext>
+        <answers>
+            <answer tonode="6"> <text>*Согласится на предложение*</text></answer>
+            <answer tonode="7"> <text> Ну и плети свой заговор один</text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Моё лицо скрыто, как и мои намерения. Но если ты поможешь мне, я помогу тебе.</npctext>
+        <answers>
+            <answer tonode="2"> <text>Что за услуга тебе нужна?</text></answer>
+            <answer tonode="7"> <text>Сам как-нибудь разберусь</text></answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Держи. Но помни - уговор есть уговор. Придётся исполнить или поплатитьшься жизнью.</npctext>
+        <answers>
+            <answer tonode="12"> <text>*Взять вещицу и пропуск</text> <condition>conspiracy</condition> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Ну бывай, путник. Ежели передумаешь, заглядывай ко мне в лавку.</npctext>
+        <answers>
+            <answer tonode="8"> <text>*Оставить таинственного торговца*</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Готов согласиться на моё предложение?</npctext>
+        <answers>
+            <answer tonode="6"> <text>Я отнесу твою вещь наверх</text></answer>
+            <answer tonode="8"> <text>Отстань от меня, дьявол</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Чего же ты медлишь? Ступай к королю, которого ты так жаждал увидеть</npctext>
+        <answers>
+            <answer tonode="10"> <text>Я передумал. Забирай свои грязный пропуск с игрушкой дьявола</text> </answer>
+            <answer tonode="9"> <text>*Оставить таинственного торговца*</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Отказы не принимаются. Ты либо исполняй на что согласился, либо к смерти готовься</npctext>
+        <answers>
+            <answer tonode="11"> <text>Я не боюсь тебя, дьявол</text></answer>
+            <answer tonode="9"> <text>*Оставить таинственного торговца*</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>Ну и сгинь в своей глупости во веки веков</npctext>
+        <answers>
+            <answer tonode="11"> <text>*Продолжить*</text> <condition>death</condition> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+    <node>
+        <npctext>*Я бы мог поджечь замок, как он хочет или же поджечь один из костров и не наживать себе проблем*</npctext>
+        <answers>
+            <answer tonode="9"> <text>*Продолжить*</text> <dialend>true</dialend> </answer>
+        </answers>
+    </node>
+</dialogue>
