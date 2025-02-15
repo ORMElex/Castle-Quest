@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,6 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Canvas _dialogueCanvas;
     [SerializeField] private Canvas _pauseGameUI;
 
+    [SerializeField] private GameObject _startPoint;
+
     private GameObject _player;
     void Start()
     {
@@ -28,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     void OnEnable()
     {
+        StartCoroutine(ActivateWithDelay());
         List<DialogueSystem> dialogueSystems = FindObjectsByType<DialogueSystem>(FindObjectsSortMode.None).ToList();
         foreach (var diasys in dialogueSystems)
         {
@@ -199,12 +204,14 @@ public class GameManager : MonoBehaviour
 
     private void LoadTitles()
     {
-        SceneManager.LoadScene(2);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
     public void LoadLevel(int level)
     {
-        SceneManager.LoadScene(level);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(level, LoadSceneMode.Single);
     }
 
 
@@ -219,5 +226,18 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         _pauseGameUI.gameObject.SetActive(false);
+    }
+
+    IEnumerator ActivateWithDelay()
+    {
+        Debug.Log("Ждём 1 секунду...");
+        yield return new WaitForSeconds(0.1f);
+        Debug.Log("Вызываем ActivateStartPoint()");
+        ActivateStartPoint();
+    }
+
+    public void ActivateStartPoint()
+    {
+        _startPoint.gameObject.SetActive(true);
     }
 }

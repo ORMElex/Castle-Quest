@@ -1,6 +1,8 @@
 using System;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -80,7 +82,7 @@ public class PlayerMovementComp : MonoBehaviour
         }
         else
         {
-           gamePaused = true;
+            gamePaused = true;
             gm.PauseGame(); 
         }
     }
